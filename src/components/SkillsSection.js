@@ -1,17 +1,20 @@
 // components/SkillsSection.js
 import React from 'react';
+import './skills.css';
+import react from '../Images/react.jpeg';
+import node from '../Images/node.png';
+import js from '../Images/js.jpeg';
+import gb from '../Images/download (1).jpeg';
 
 const SkillsSection = () => {
   return (
     <section id="skills" className="skills-section">
-      <h2>Skills</h2>
-      <div className="skills-list">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>React.js</div>
-        <div>Node.js</div>
-        <div>Git & GitHub</div>
+      <h2>Front-End</h2>
+      <div className='icons'>
+        <img src={js} title='JavaScript' alt='JavaScript' />
+        <img src={node} title='node.js' alt='node' />
+        <img src={react} title='React.js' alt='React.js' />
+        <img src={gb} title='github'  alt='github' />
       </div>
     </section>
   );
